@@ -1,4 +1,4 @@
-FROM ruby:2.3.7
+FROM ruby:2.3.8
 
 RUN apt-get update \
   && apt-get install -y postgresql postgresql-contrib nodejs \
