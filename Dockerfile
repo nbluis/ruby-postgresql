@@ -1,10 +1,13 @@
-FROM ruby:2.3.8
+FROM ruby:2.3.8-jessie
 
 RUN apt-get update \
   && apt-get install -y postgresql postgresql-contrib nodejs \
   && apt-get install sudo \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN ln -f -s /usr/share/zoneinfo/Brazil/East /etc/localtime
+RUN dpkg-reconfigure --frontend noninteractive tzdata
 
 RUN service postgresql start \
     && sudo -u postgres psql postgres -c "ALTER ROLE postgres WITH PASSWORD 'postgres';" \
