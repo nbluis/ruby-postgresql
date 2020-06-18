@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build -t nbluis/ruby-postgresql .
-docker push nbluis/ruby-postgresql
+docker build -t salaozen/ruby-postgresql:2.6.6 .
+docker push salaozen/ruby-postgresql:2.6.6

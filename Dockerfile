@@ -1,4 +1,4 @@
-FROM ruby:2.3.8-jessie
+FROM ruby:2.6.6-stretch
 
 RUN apt-get update \
   && apt-get install -y postgresql postgresql-contrib nodejs \
