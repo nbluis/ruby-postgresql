@@ -1,8 +1,7 @@
-FROM ruby:2.6.6-stretch
+FROM ruby:2.6.6-buster
 
 RUN apt-get update \
-  && apt-get install -y postgresql postgresql-contrib nodejs \
-  && apt-get install sudo \
+  && apt-get install -y postgresql postgresql-contrib nodejs npm sudo \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
