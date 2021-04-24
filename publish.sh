@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build -t salaozen/ruby-postgresql:2.6.6_cypress .
-docker push salaozen/ruby-postgresql:2.6.6_cypress
+docker build -t salaozen/salaozenweb-buildimage:2.6.7 .
+docker push salaozen/salaozenweb-buildimage:2.6.7
