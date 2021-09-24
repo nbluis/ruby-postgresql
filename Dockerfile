@@ -1,4 +1,4 @@
-FROM ruby:2.6.7-buster
+FROM ruby:2.6.8-buster
 
 RUN apt-get update \
   && apt-get install -y postgresql postgresql-contrib nodejs npm sudo xvfb \
